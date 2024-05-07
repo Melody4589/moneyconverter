@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import "./style.css";
+import { actionAsyncStorage } from "next/dist/client/components/action-async-storage-instance";
 export default function Page() {
     var [money, updatebrowser] = useState(300);
 
@@ -13,10 +14,9 @@ export default function Page() {
     function subMoney() {
         money -= 300;
         updatebrowser(money)
-
+        
+       
     }
-
-
     return (
         <main>
             <h1>My Money App</h1>
