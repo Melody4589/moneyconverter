@@ -14,8 +14,8 @@ export default function Page() {
     function subMoney() {
         money -= 300;
         updatebrowser(money)
-        
-       
+
+
     }
     return (
         <main>
